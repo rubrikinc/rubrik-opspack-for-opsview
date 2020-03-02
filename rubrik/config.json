@@ -1,0 +1,190 @@
+{
+    "attribute" : [
+       {
+          "arg1" : "",
+          "arg2" : "",
+          "arg4" : "",
+          "label1" : "username",
+          "label2" : "password",
+          "label3" : "",
+          "label4" : "",
+          "name" : "RUBRIK_CREDS",
+          "secured1" : "1",
+          "secured2" : "1",
+          "secured3" : "0",
+          "secured4" : "0",
+          "value" : ""
+       }
+    ],
+    "hosttemplate" : [
+       {
+          "description" : "Monitor Rubrik Cluster",
+          "has_icon" : "0",
+          "managementurls" : [],
+          "name" : "Application - Rubrik",
+          "servicechecks" : [
+             {
+                "event_handler" : null,
+                "exception" : null,
+                "name" : "Rubrik - Check Node Status",
+                "timed_exception" : null
+             },
+             {
+                "event_handler" : null,
+                "exception" : null,
+                "name" : "Rubrik - Check Runway",
+                "timed_exception" : null
+             },
+             {
+                "event_handler" : null,
+                "exception" : null,
+                "name" : "Rubrik - Check Storage",
+                "timed_exception" : null
+             }
+          ]
+       }
+    ],
+    "keyword" : [],
+    "servicecheck" : [
+       {
+          "alert_from_failure" : "1",
+          "args" : "-s $HOSTADDRESS$ -u '%RUBRIK_CREDS:1%' -p '%RUBRIK_CREDS:2%'",
+          "attribute" : "",
+          "calculate_rate" : "no",
+          "cascaded_from" : null,
+          "check_attempts" : "3",
+          "check_freshness" : "1",
+          "check_interval" : "60",
+          "checktype" : {
+             "name" : "Active Plugin"
+          },
+          "critical_comparison" : null,
+          "critical_value" : null,
+          "dependencies" : [],
+          "description" : "Checks Node Availability for the cluster",
+          "event_handler" : "",
+          "event_handler_always_exec" : "0",
+          "flap_detection_enabled" : "1",
+          "invertresults" : "0",
+          "keywords" : [],
+          "label" : null,
+          "level" : 0,
+          "markdown_filter" : "0",
+          "name" : "Rubrik - Check Node Status",
+          "notification_interval" : null,
+          "notification_options" : "w,c,r,u,f",
+          "oid" : null,
+          "plugin" : {
+             "name" : "check_rubrik_node_status.py"
+          },
+          "retry_check_interval" : "60",
+          "sensitive_arguments" : "1",
+          "servicegroup" : {
+             "name" : "Applicaiton - Rubrik"
+          },
+          "snmptraprules" : [],
+          "stale_state" : "3",
+          "stale_text" : "UNKNOWN: Service results are stale",
+          "stale_threshold_seconds" : "1800",
+          "stalking" : "",
+          "volatile" : "0",
+          "warning_comparison" : null,
+          "warning_value" : null
+       },
+       {
+        "alert_from_failure" : "1",
+        "args" : "-s $HOSTADDRESS$ -u '%RUBRIK_CREDS:1%' -p '%RUBRIK_CREDS:2%'",
+        "attribute" : "",
+        "calculate_rate" : "no",
+        "cascaded_from" : null,
+        "check_attempts" : "3",
+        "check_freshness" : "1",
+        "check_interval" : "60",
+        "checktype" : {
+           "name" : "Active Plugin"
+        },
+        "critical_comparison" : null,
+        "critical_value" : null,
+        "dependencies" : [],
+        "description" : "Checks Remaining Storage Runway",
+        "event_handler" : "",
+        "event_handler_always_exec" : "0",
+        "flap_detection_enabled" : "1",
+        "invertresults" : "0",
+        "keywords" : [],
+        "label" : null,
+        "level" : 0,
+        "markdown_filter" : "0",
+        "name" : "Rubrik - Check Runway",
+        "notification_interval" : null,
+        "notification_options" : "w,c,r,u,f",
+        "oid" : null,
+        "plugin" : {
+           "name" : "check_rubrik_runway.py"
+        },
+        "retry_check_interval" : "60",
+        "sensitive_arguments" : "1",
+        "servicegroup" : {
+           "name" : "Applicaiton - Rubrik"
+        },
+        "snmptraprules" : [],
+        "stale_state" : "3",
+        "stale_text" : "UNKNOWN: Service results are stale",
+        "stale_threshold_seconds" : "1800",
+        "stalking" : "",
+        "volatile" : "0",
+        "warning_comparison" : null,
+        "warning_value" : null
+     },
+     {
+        "alert_from_failure" : "1",
+        "args" : "-s $HOSTADDRESS$ -u '%RUBRIK_CREDS:1%' -p '%RUBRIK_CREDS:2%'",
+        "attribute" : "",
+        "calculate_rate" : "no",
+        "cascaded_from" : null,
+        "check_attempts" : "3",
+        "check_freshness" : "1",
+        "check_interval" : "60",
+        "checktype" : {
+           "name" : "Active Plugin"
+        },
+        "critical_comparison" : null,
+        "critical_value" : null,
+        "dependencies" : [],
+        "description" : "Checks Node Availability for the cluster",
+        "event_handler" : "",
+        "event_handler_always_exec" : "0",
+        "flap_detection_enabled" : "1",
+        "invertresults" : "0",
+        "keywords" : [],
+        "label" : null,
+        "level" : 0,
+        "markdown_filter" : "0",
+        "name" : "Rubrik - Cluster Storage",
+        "notification_interval" : null,
+        "notification_options" : "w,c,r,u,f",
+        "oid" : null,
+        "plugin" : {
+           "name" : "check_rubrik_cluster_storage.py"
+        },
+        "retry_check_interval" : "60",
+        "sensitive_arguments" : "1",
+        "servicegroup" : {
+           "name" : "Applicaiton - Rubrik"
+        },
+        "snmptraprules" : [],
+        "stale_state" : "3",
+        "stale_text" : "UNKNOWN: Service results are stale",
+        "stale_threshold_seconds" : "1800",
+        "stalking" : "",
+        "volatile" : "0",
+        "warning_comparison" : null,
+        "warning_value" : null
+     }
+    ],
+    "servicegroup" : [
+       {
+          "name" : "Application - Rubrik"
+       }
+    ]
+ }

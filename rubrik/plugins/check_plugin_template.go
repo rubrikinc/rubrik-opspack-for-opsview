@@ -1,9 +1,5 @@
 package main
 
-import (
-	"github.com/opsview/go-plugin"
-)
-
 var opts struct {
 	Hostname string `short:"H" long:"hostname" description:"IP address for Host"`
 	Port     string `short:"P" long:"port" description:"Port for Host"`

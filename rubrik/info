@@ -1,0 +1,5 @@
+NAME=com.opsview.opspack.rubrik
+VERSION=1.0.0
+ALIAS=Application - Rubrik
+DEPENDENCIES=
+OPSVIEW_MIN_VERSION=6.0.0
