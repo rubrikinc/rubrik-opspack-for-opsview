@@ -26,7 +26,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: $API_KEY
+    secure: API_KEY
   file: release/$OPSPACK_NAME.opspack
   on:
     all_branches: true
