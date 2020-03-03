@@ -42,5 +42,6 @@ create_opspack:
 
 	$(call remove_readme_plugin_link,$$OPSPACK_NAME) || $(call view_files)
 
+	ls -l
 	ls -l $$OPSPACK_NAME/plugins
 	tar -zcvf $$OPSPACK_NAME.opspack $$OPSPACK_NAME
