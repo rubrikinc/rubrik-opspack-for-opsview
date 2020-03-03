@@ -1,17 +1,17 @@
 # CDs to an opspack's plugins directory, builds the go sources and shouts the list of executables
 define build_go_sources
-cd $(1)/rubrik/plugins && \
+cd $(1)/plugins && \
 go build -ldflags "-s -w" -v *.go
 endef
 
 # Remove all go files in the given opspack folder
 define remove_go_sources
-cd $(1)/rubrik/plugins && \
+cd $(1)/plugins && \
 rm *.go
 endef
 
 define remove_readme_plugin_link
-cd $(1)/rubrik/plugins && \
+cd $(1)/plugins && \
 rm README.md
 endef
 
