@@ -20,13 +20,12 @@ install:
 notifications:
   email: false
 script:
-  - "./bin/verify_plugin.sh"
+- "./bin/verify_plugin.sh"
 before_deploy:
 - "./bin/pre_deploy.sh"
 deploy:
   provider: releases
-  api_key:
-    secure: $API_KEY
+  api_key: "$API_KEY"
   file: release/$OPSPACK_NAME.opspack
   on:
     all_branches: true
