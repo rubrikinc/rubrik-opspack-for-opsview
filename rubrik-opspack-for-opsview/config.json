@@ -44,52 +44,51 @@
           ]
        }
     ],
-    "keyword" : [],
     "servicecheck" : [
        {
-          "alert_from_failure" : "1",
-          "args" : "-s $HOSTADDRESS$ -u '%RUBRIK_CREDS:1%' -p '%RUBRIK_CREDS:2%'",
-          "attribute" : "",
-          "calculate_rate" : "no",
-          "cascaded_from" : null,
-          "check_attempts" : "3",
-          "check_freshness" : "1",
-          "check_interval" : "60",
-          "checktype" : {
-             "name" : "Active Plugin"
-          },
-          "critical_comparison" : null,
-          "critical_value" : null,
-          "dependencies" : [],
-          "description" : "Checks Node Availability for the cluster",
-          "event_handler" : "",
-          "event_handler_always_exec" : "0",
-          "flap_detection_enabled" : "1",
-          "invertresults" : "0",
-          "keywords" : [],
-          "label" : null,
-          "level" : 0,
-          "markdown_filter" : "0",
-          "name" : "Rubrik - Check Node Status",
-          "notification_interval" : null,
-          "notification_options" : "w,c,r,u,f",
-          "oid" : null,
-          "plugin" : {
-             "name" : "check_rubrik_node_status.py"
-          },
-          "retry_check_interval" : "60",
-          "sensitive_arguments" : "1",
-          "servicegroup" : {
-             "name" : "Applicaiton - Rubrik"
-          },
-          "snmptraprules" : [],
-          "stale_state" : "3",
-          "stale_text" : "UNKNOWN: Service results are stale",
-          "stale_threshold_seconds" : "1800",
-          "stalking" : "",
-          "volatile" : "0",
-          "warning_comparison" : null,
-          "warning_value" : null
+         "alert_from_failure" : "1",
+         "args" : "-s $HOSTADDRESS$ -u '%RUBRIK_CREDS:1%' -p '%RUBRIK_CREDS:2%'",
+         "attribute" : "",
+         "calculate_rate" : "no",
+         "cascaded_from" : null,
+         "check_attempts" : "3",
+         "check_freshness" : "1",
+         "check_interval" : "60",
+         "checktype" : {
+            "name" : "Active Plugin"
+         },
+         "critical_comparison" : null,
+         "critical_value" : null,
+         "dependencies" : [],
+         "description" : "Checks Node Availability for the cluster",
+         "event_handler" : "",
+         "event_handler_always_exec" : "0",
+         "flap_detection_enabled" : "1",
+         "invertresults" : "0",
+         "keywords" : [],
+         "label" : null,
+         "level" : 0,
+         "markdown_filter" : "0",
+         "name" : "Rubrik - Check Node Status",
+         "notification_interval" : null,
+         "notification_options" : "w,c,r,u,f",
+         "oid" : null,
+         "plugin" : {
+            "name" : "check_rubrik_node_status.py"
+         },
+         "retry_check_interval" : "60",
+         "sensitive_arguments" : "1",
+         "servicegroup" : {
+            "name" : "Applicaiton - Rubrik"
+         },
+         "snmptraprules" : [],
+         "stale_state" : "3",
+         "stale_text" : "UNKNOWN: Service results are stale",
+         "stale_threshold_seconds" : "1800",
+         "stalking" : "",
+         "volatile" : "0",
+         "warning_comparison" : null,
+         "warning_value" : null
        },
        {
         "alert_from_failure" : "1",
@@ -183,8 +182,8 @@
      }
     ],
     "servicegroup" : [
-       {
-          "name" : "Application - Rubrik"
-       }
-    ]
+      {
+         "name" : "Applicaiton - Rubrik"
+      }
+   ]
  }

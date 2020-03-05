@@ -1,5 +1,5 @@
 
-# 'Rubrik' Opspack '1.0.0' [![Build Status](https://travis-ci.org/opsview/Opspack-Template.svg?branch=master)](https://travis-ci.org/opsview/Opspack-Template)
+# 'Rubrik' Opspack '1.0.0' [![Build Status](https://travis-ci.org/rubrikinc/rubrik-opspack-for-opsview.svg?branch=master)](https://travis-ci.org/rubrikinc/rubrik-opspack-for-opsview)
 
 Rubrik is a single platform that manages all data in the cloud, at the edge, or on-prem for backup, disaster recovery, archival, compliance, analytics, and copy data management. Rubrik powers on your data instantly (for recovery to test/dev) and unleashes hard savings from a converged architecture.
 
@@ -32,11 +32,12 @@ To install these python dependancies, you can do the following:
 ### Install PIP
 
 *Debian/Ubunutu*
+
 `sudo apt-get install python-pip`
 
 *CentOS/RHEL*
 
-`sudo apt-get install python-pip`
+`sudo yum install python-pip`
 
 ### PIP Packages
 
